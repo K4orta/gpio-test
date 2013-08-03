@@ -11,8 +11,8 @@ red_state = False
 green_state = True
 
 while True:
-  red_state = !red_state
-  green_state = !green_state
+  red_state = not red_state
+  green_state = not green_state
   GPIO.output(GREEN_LED, green_state)
   GPIO.output(RED_LED, red_state)
   time.sleep(1)
